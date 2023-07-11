@@ -15,4 +15,4 @@ const ExpenseTotal = () => {
     );
 };
 
-export default ExpenseTotal;
+export default ExpenseTotal
