@@ -8,9 +8,9 @@ const Currency = () => {
         <div className='badge-success'>
             <span>Currency:
                 <select id='currency' onChange={(event) => {dispatch({type: 'CHG_CURRENCY', payload: event.target.value})}}>
+                    <option value='£' name='£ Pound'>£ Pound</option>
                     <option value='€' name='€ Euro'>€ Euro</option>
                     <option value='$' name='$ Dollar'>$ Dollar</option>
-                    <option value='£' name='£ Pound'>£ Pound</option>
                     <option value='₹' name='₹ Rupee'>₹ Rupee</option>
                 </select>
             </span>

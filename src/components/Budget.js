@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext'
 
 const Budget = () => {
-    const {budget, expenses, dispatch} = useContext(AppContext)
+    const {budget, expenses, currency, dispatch} = useContext(AppContext)
 
     const maxBudget = 20000
 
@@ -24,7 +24,7 @@ const Budget = () => {
 
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £
+            <span>Budget: {currency}
                 <input
                     id='budget'
                     type='number'
